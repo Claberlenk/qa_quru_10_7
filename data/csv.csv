@@ -1,0 +1,4 @@
+OrderID*,Insurance Value (in USD),Company,Contact Name*,Address 1*,Address 2,Address 3,City*,State,Zip Code,Country Code* (2-letter),Phone*,Email,Unit Value (in USD)*,Courier*,Warehouse*,Quantity*,Item SKU*,Packaging Item,Tax ID,Unit Type,Shipment Date,Shipping Cost (in USD),Reason of Export,Tax (Unit Value Currency),Duty (Unit Value Currency)
+email1,10,ACME INC,JANE DARE,123 ACME LANE,,,MARRICKVILLE,IL,99999,US,(555) 555-5555,JANE@EXAMPLE.COM,1,Self Pick Up,Geodis,1,00511111,,taxid12345,Base Item,2024-11-08 00:00:00,10,Gift,10,10
+email2,10,ACME INC,JANE DARE,123 ACME LANE,,,MARRICKVILLE,IL,99999,US,(555) 555-5555,JANE@EXAMPLE.COM,1,Self Pick Up,Geodis,1,123456-sku1,,taxid12345,Base Item,2024-11-08 00:00:00,10,Gift,10,10
+email3,10,ACME INC,JANE DARE,123 ACME LANE,,,MARRICKVILLE,IL,99999,US,(555) 555-5555,JANE@EXAMPLE.COM,1,Self Pick Up,Geodis,1,123456-sku1,,taxid12345,Base Item,2024-11-08 00:00:00,10,Gift,10,10
