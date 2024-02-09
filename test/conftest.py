@@ -2,7 +2,7 @@ import os.path
 import shutil
 from zipfile import ZipFile
 import pytest
-from module.path import *
+from module.path import RESOURCES, DATA_FILES, DATA
 
 
 @pytest.fixture(autouse=True)

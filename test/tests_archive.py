@@ -1,14 +1,16 @@
 import openpyxl
-import PyPDF2
+from pypdf import PdfReader
 import csv
 from zipfile import ZipFile
 from module.path import *
 
+
 def test_read_pdf_file():
     with ZipFile(ARCHIVE, 'r') as archive:
         with archive.open('pdf.pdf') as file_in_zip:
-            pdf_reader = PyPDF2.PdfReader(file_in_zip)
+            pdf_reader = PdfReader(file_in_zip)
             assert len(pdf_reader.pages) > 0
+
 
 def test_read_csv_file():
     with ZipFile(ARCHIVE, 'r') as archive:
@@ -17,6 +19,7 @@ def test_read_csv_file():
             csv_reader = csv.reader(decoded_content.splitlines())
             rows = list(csv_reader)
             assert len(rows) > 0
+
 
 def test_csv_content():
     expected_first_word = 'OrderID*'
@@ -28,6 +31,7 @@ def test_csv_content():
         if header_row:
             first_word = header_row[0]
             assert first_word == expected_first_word
+
 
 def test_read_xlsx_content():
     with ZipFile(ARCHIVE, 'r') as archive:
